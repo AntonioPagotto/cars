@@ -1,0 +1,13 @@
+<form [formGroup]="registerForm" #form="ngForm" (submit)="registerUser()" autocomplete="off">
+    <div class="form-group">
+        <div class="white-panel">
+            <div class="login">
+                <h2>Register</h2>
+                <input type="text" formControlName="user" placeholder="Usuário">
+                <input type="text" formControlName="email" placeholder="E-mail">
+                <input type="password" formControlName="password" placeholder="Senha">
+                <button type="submit">Register</button>
+            </div>
+        </div>
+    </div>
+</form>
